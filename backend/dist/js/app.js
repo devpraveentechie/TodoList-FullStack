@@ -15,7 +15,7 @@ app.use(body_parser_1.default.json({ limit: "50mb", type: "application/json" }))
 app.use(body_parser_1.default.urlencoded({ limit: "50mb", extended: true }));
 app.use((0, cors_1.default)());
 app.use(routes_1.default);
-const uri = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.evg5qkc.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.5onycuk.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`;
 const options = { useNewUrlParser: true, useUnifiedTopology: true };
 //mongoose.set("useFindAndModify", false)
 mongoose_1.default

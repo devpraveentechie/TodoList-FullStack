@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
 app.use(cors());
 app.use(router);
 
-const uri: string = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.evg5qkc.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`;
+const uri: string = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.5onycuk.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`;
 const options = { useNewUrlParser: true, useUnifiedTopology: true };
 //mongoose.set("useFindAndModify", false)
 
