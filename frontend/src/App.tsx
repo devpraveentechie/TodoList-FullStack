@@ -1,11 +1,12 @@
-import React from "react";
-import Todo from "./components/Todo";
 import "./App.css";
+import HeaderNavigation from "./components/HeaderNavigation";
+import { PageRouter } from "./Routes";
 
 function App() {
   return (
-    <div className="App bg-gray-800">
-      <Todo />
+    <div className="App">
+      <HeaderNavigation />
+      <PageRouter />
     </div>
   );
 }
