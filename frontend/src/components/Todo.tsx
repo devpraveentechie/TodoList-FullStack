@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from "react";
 import TodoItem from "./TodoItem";
 import AddTodo from "./AddTodo";
-import { getTodos, addTodo, updateTodo, deleteTodo } from "../api/todoApi";
+import {
+  getTodos,
+  addTodo,
+  updateTodo,
+  deleteTodo,
+} from "../shared/services/todoApi";
 const todo: ITodo = {
   _id: "",
   name: "",

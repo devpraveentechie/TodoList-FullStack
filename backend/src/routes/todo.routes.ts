@@ -10,8 +10,6 @@ const router: Router = Router();
 
 router.get("/", getTodos);
 
-router.get("/todos", getTodos);
-
 router.post("/add-todo", addTodo);
 
 router.put("/edit-todo/:id", updateTodo);

@@ -22,7 +22,9 @@ const UserForm = () => {
   };
   return (
     <>
-      <h1>User Form</h1>
+      <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-black-900 md:text-5xl lg:text-6xl dark:text-black">
+        User Form
+      </h1>
       <div className="formWrapper">
         <form
           onSubmit={(event) => {
@@ -39,6 +41,7 @@ const UserForm = () => {
                 type="text"
                 value={formData?.name}
                 onChange={handleInputChange}
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               />
             </div>
           </div>
@@ -50,6 +53,7 @@ const UserForm = () => {
                 type="date"
                 value={formData?.birthdate}
                 onChange={handleInputChange}
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               />
             </div>
           </div>
@@ -61,11 +65,14 @@ const UserForm = () => {
                 type="text"
                 value={formData?.country}
                 onChange={handleInputChange}
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               />
             </div>
           </div>
           <div>
-            <button className="button">Add User</button>
+            <button className="button bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mt-10">
+              Add User
+            </button>
           </div>
         </form>
       </div>

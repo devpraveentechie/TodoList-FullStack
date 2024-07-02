@@ -1,11 +1,11 @@
 export interface User {
-  id: number;
+  id: string;
   name?: string;
-  birthdate: string;
+  birthdate?: string;
   country?: string;
 }
 export interface UserFormType {
   name?: string;
-  birthdate: string;
+  birthdate?: string;
   country?: string;
 }

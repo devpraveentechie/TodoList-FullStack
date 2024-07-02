@@ -1,5 +1,5 @@
 import { ChangeEvent, useState } from "react";
-import { addTodo, getTodos } from "../api/todoApi";
+import { addTodo, getTodos } from "../shared/services/todoApi";
 
 export default function TodoForm() {
   const [formData, setFormData] = useState({ name: "", description: "" });

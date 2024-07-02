@@ -10,16 +10,18 @@ const Users = () => {
   useEffect(() => {
     const getUserData = async () => {
       const usersData = await getUsers();
-      setUsers(usersData.users);
+      setUsers(usersData?.users);
     };
     if (!users || users?.length === 0) {
       getUserData();
     }
-  }, [users]);
+  }, []);
   return (
     <div className="wrapper">
       <UserForm />
-      <h1>User List</h1>
+      <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-black-900 md:text-5xl lg:text-6xl dark:text-black">
+        User List
+      </h1>
       <div className="tableHeader">
         <div className="cell">
           <span>Id</span>

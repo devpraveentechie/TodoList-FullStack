@@ -11,13 +11,13 @@ const UserComponent = ({ user }: UserProps) => {
   const { id } = useParams();
   useEffect(() => {
     const getUserData = async () => {
-      const user = await getUser(Number(id));
+      const user = await getUser(id ?? "");
       setUserData(user.user);
     };
     if (!userdata) {
       getUserData();
     }
-  }, [userdata]);
+  }, []);
   return (
     <>
       <div className="row">
@@ -41,7 +41,7 @@ const UserComponent = ({ user }: UserProps) => {
           <button
             onClick={async (event) => {
               event.preventDefault();
-              await deleteUser(userdata!.id);
+              await deleteUser(userdata?.id ?? "");
             }}
           >
             Delete User
